@@ -13,7 +13,7 @@ def solution(begin, target, words):
             break        
         for i in range(len(words)):
             temp_cnt = 0
-            if not V[i]:
+            if V[i] == False:
                 for j in range(len(word)):
                     if word[j] != words[i][j]:
                         temp_cnt += 1
